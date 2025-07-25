@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Healthy Breakfast Recommendations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <i class="fas fa-utensils header-icon"></i>
+                <h1>Healthy Breakfast Hub</h1>
+                <p class="subtitle">Start your day with nutritious and delicious meals</p>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="date-section">
+                <div class="date-card">
+                    <i class="fas fa-calendar-day"></i>
+                    <div class="date-info">
+                        <span class="date-label">Today's Date</span>
+                        <span class="current-date" id="currentDate"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recommendation-section">
+                <div class="recommendation-card">
+                    <div class="card-header">
+                        <h2><i class="fas fa-star"></i> Today's Breakfast Recommendation</h2>
+                        <button class="refresh-btn" id="refreshBtn">
+                            <i class="fas fa-sync-alt"></i> New Suggestion
+                        </button>
+                    </div>
+                    
+                    <div class="breakfast-content" id="breakfastContent">
+                        <div class="breakfast-image">
+                            <img id="breakfastImage" src="" alt="Breakfast recommendation">
+                        </div>
+                        
+                        <div class="breakfast-details">
+                            <h3 id="breakfastName"></h3>
+                            <p class="breakfast-description" id="breakfastDescription"></p>
+                            
+                            <div class="nutrition-info">
+                                <div class="nutrition-item">
+                                    <i class="fas fa-fire"></i>
+                                    <span id="calories"></span>
+                                </div>
+                                <div class="nutrition-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span id="prepTime"></span>
+                                </div>
+                                <div class="nutrition-item">
+                                    <i class="fas fa-heart"></i>
+                                    <span id="healthScore"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ingredients-section">
+                        <h4><i class="fas fa-list"></i> Healthy Ingredients</h4>
+                        <div class="ingredients-grid" id="ingredientsList"></div>
+                    </div>
+
+                    <div class="instructions-section">
+                        <h4><i class="fas fa-clipboard-list"></i> Preparation Steps</h4>
+                        <ol class="instructions-list" id="instructionsList"></ol>
+                    </div>
+
+                    <div class="benefits-section">
+                        <h4><i class="fas fa-leaf"></i> Health Benefits</h4>
+                        <div class="benefits-list" id="benefitsList"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <i class="fas fa-apple-alt"></i>
+                        <div class="stat-info">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Healthy Recipes</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-seedling"></i>
+                        <div class="stat-info">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Superfoods</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-chart-line"></i>
+                        <div class="stat-info">
+                            <span class="stat-number">Daily</span>
+                            <span class="stat-label">Fresh Ideas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Healthy Breakfast Hub. Nourish your body, fuel your day.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
